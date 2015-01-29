@@ -33,9 +33,11 @@ This form should submit to itself. When the form is submitted, take the user inp
 
 Lastly, use the following snippet to display the inserted song's title and id.
 
+```
 <p>The song <?php echo $song->getTitle() ?>
    with an ID of <?php echo $song->getId() ?>
    was inserted successfully!</p>
+```
 When you insert a record into the songs table, it will create the primary key automatically (the id field will be autoincremented). When a record is inserted using PDO, you can get the primary key of the last inserted record with $pdo->lastInsertId(). Documentation on lastInsertId() can be found here.
 
 ####Submission
